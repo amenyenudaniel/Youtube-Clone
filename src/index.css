@@ -35,7 +35,7 @@ a {
 }
 
 .react-player {
-  height: 77vh !important;
+  height: 70vh !important;
   width: 100% !important;
 }
 
@@ -112,4 +112,29 @@ a {
     #004e92,
     #000428
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.form__search input {
+  height: 40px;
+  border: 1px solid black;
+  padding-left: 1rem;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+}
+
+.form__search button {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
 }

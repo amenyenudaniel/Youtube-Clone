@@ -29,23 +29,23 @@ const VideoCard = ({
       <CardMedia
         image={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
         alt={snippet?.title}
-        sx={{ width: { xs: "100%", sm: "358px" }, height: 180 }}
+        sx={{ width: { xs: "280px", sm: "358px" }, height: 180 }}
       />
     </Link>
     <CardContent
       sx={{
         backgroundColor: lightmode ? "rgba(226, 226, 226, 0.645)" : "#1E1E1E",
-        height: "106px",
+        height: "40px",
       }}
     >
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         {lightmode ? (
           <Typography variant="subtitle1" fontWeight="bold" color="#000">
-            {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
+            {snippet?.title.slice(0, 30) || demoVideoTitle.slice(0, 30)}
           </Typography>
         ) : (
           <Typography variant="subtitle1" fontWeight="bold" color="#FFF">
-            {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
+            {snippet?.title.slice(0, 30) || demoVideoTitle.slice(0, 30)}
           </Typography>
         )}
       </Link>

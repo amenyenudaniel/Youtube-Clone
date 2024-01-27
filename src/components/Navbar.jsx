@@ -9,7 +9,7 @@ const Navbar = ({ lightmode, setLightmode }) => (
   <Stack
     direction="row"
     alignItems="center"
-    p={2}
+    p={1}
     sx={{
       position: "sticky",
       background: lightmode ? "#fff" : "#000",
@@ -17,13 +17,22 @@ const Navbar = ({ lightmode, setLightmode }) => (
       justifyContent: "space-between",
     }}
   >
-    <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-      <img src={logo} alt="logo" height={45} />
+    <Link
+      to="/"
+      style={{ display: "flex", alignItems: "center", marginRight: "6px" }}
+    >
+      <img src={logo} alt="logo" height={35} />
     </Link>
     <SearchBar />
     {lightmode ? (
       <span
-        style={{ color: "black", marginRight: "1rem", cursor: "pointer" }}
+        style={{
+          color: "black",
+          marginRight: "0.7rem",
+          marginLeft: "7px",
+          cursor: "pointer",
+          cursor: "pointer",
+        }}
         title="LightMode"
         onClick={() => setLightmode(false)}
       >
@@ -31,7 +40,12 @@ const Navbar = ({ lightmode, setLightmode }) => (
       </span>
     ) : (
       <span
-        style={{ color: "white", marginRight: "1rem", cursor: "pointer" }}
+        style={{
+          color: "white",
+          marginRight: "0.7rem",
+          marginLeft: "7px",
+          cursor: "pointer",
+        }}
         title="LightMode"
         onClick={() => setLightmode(true)}
       >

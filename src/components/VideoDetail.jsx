@@ -40,11 +40,11 @@ const VideoDetail = ({ lightmode }) => {
               controls
             />
             {lightmode ? (
-              <Typography color="#000" variant="h5" fontWeight="bold" p={2}>
+              <Typography color="#000" variant="h6" fontWeight="bold" p={1}>
                 {title}
               </Typography>
             ) : (
-              <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
+              <Typography color="#fff" variant="h6" fontWeight="bold" p={1}>
                 {title}
               </Typography>
             )}
@@ -52,8 +52,7 @@ const VideoDetail = ({ lightmode }) => {
               direction="row"
               justifyContent="space-between"
               sx={{ color: lightmode ? "black" : "#fff" }}
-              py={1}
-              px={2}
+              px={1}
             >
               <Link to={`/channel/${channelId}`}>
                 {lightmode ? (
